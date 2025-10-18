@@ -8,5 +8,8 @@ class CreateRules < ActiveRecord::Migration[8.1]
 
       t.timestamps
     end
+
+    add_index :rules, :type
+    add_index :rules, :active
   end
 end
